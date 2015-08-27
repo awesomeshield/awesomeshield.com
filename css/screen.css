@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@import "reset.css";
+
+@font-face {
+    font-family: 'summer_fontbold';
+    src: url('/fonts/summer_font_bold-webfont.eot');
+    src: url('/fonts/summer_font_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/summer_font_bold-webfont.woff2') format('woff2'),
+         url('/fonts/summer_font_bold-webfont.woff') format('woff'),
+         url('/fonts/summer_font_bold-webfont.ttf') format('truetype'),
+         url('/fonts/summer_font_bold-webfont.svg#summer_fontbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* 
+TYPE
+*/
+h1,
+h2,
+h3 {
+    font-family: 'summer_fontbold';
+	text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+h2,
+h3 {
+	color: #444;
+}
+h1 {
+    color: white;
+    font-size: 98px;
+}
+h2 {
+	font-size: 60px;
+	line-height: 0.9em;
+}
+h2 span {
+	font-size: 120px;
+	line-height: 0.9em;
+	color: #CF2427;
+}
+h3 {
+	font-size: 36px;
+	text-transform: none;
+}
+
+
+/*
+CORE CONTAINERS
+*/
+[class^="wrapper"] {
+	position: relative;
+	z-index: 1000;	
+}
+.row {
+	margin: 0; /* fix for bootstrap negative margins on .row */
+}
+
+
+/*
+HERO
+*/
+#wrapper-hero {
+	background: rgba(0,0,0,0.08);
+	height: 100vh;
+	border-top: 10px solid #CF2427;
+}
+.logo {
+	width: 180px;
+	margin: 0 auto;
+	padding-top: 6vh;
+	display: block;
+}
+#wrapper-hero h1 {
+    padding-top: calc(60vh - 85px);
+}
+
+
+/*
+FORM
+*/
+.wrapper-form {
+	background: #CF2427;
+	margin-top: -85px;
+}
+form {
+	text-align: center;
+	padding: 20px;
+}
+input {
+	display: inline-block;
+}
+.email {
+	background: rgba(255,255,255,0.2);
+    border: none;
+    border-bottom: 3px solid white;
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+}
+.button {
+	border: 3px solid white;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px 9px;
+}
+::-webkit-input-placeholder {
+   color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+:-ms-input-placeholder {  
+   color: white;  
+}
+
+
+/*
+INTRO
+*/
+.wrapper-intro {
+	background: white;
+	padding: 80px 0 80px;
+}
+.plus {
+	margin: 108px -30px 0 0;
+}
+.product {
+	margin-top: 100px;
+}
+
+.videos {
+	margin: 60px 0;
+}
+.hardware {
+    margin: 43px auto;
+    width: 80%;	
+}
+.product h2 {
+	color: #CF2427;
+}
+
+/*
+FOOTER
+*/
+.wrapper-footer {
+	padding: 60px 0;
+	background: #444;
+	text-align: center;
+}
+.wrapper-footer a {
+	color: white;
+	margin: 0 10px;
+	font-size: 36px;
+}
+.wrapper-footer a:hover {
+	color: #CF2427;
+}
+.legal,
+.impressum a {
+	font-size: 12px;
+}
+.legal {
+	color: white;
+	opacity: 0.5;
+}
