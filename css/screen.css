@@ -155,8 +155,21 @@ FOOTER
 */
 .wrapper-footer {
 	padding: 60px 0;
-	background: #444;
+	background: #CF2427;
 	text-align: center;
+}
+.wrapper-footer h2,
+.wrapper-footer h3 {
+	color: white;
+	margin-bottom: 10px;
+}
+.wrapper-footer .cta {
+	text-decoration: underline;
+	font-weight: bold;
+	margin: 0;
+}
+.wrapper-footer a.cta:hover {
+	color: black;
 }
 .wrapper-footer a {
 	color: white;
