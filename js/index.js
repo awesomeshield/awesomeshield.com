@@ -8,3 +8,14 @@ $('document').ready(function() {
 	// f-UGhWj1xww cool sepia hd
 	// 49SKbS7Xwf4 beautiful barn sepia
 });
+
+
+// $(function() {
+//     var BV = new $.BigVideo({useFlashForFirefox:false});
+// 	BV.init();
+//     BV.show([
+//         { type: "video/mp4",  src: "video/awesome-shield.mp4" },
+//         { type: "video/webm", src: "video/awesome-shield.webm" },
+//         { type: "video/ogg",  src: "video/awesome-shield.ogv" }
+//     ]);
+// });

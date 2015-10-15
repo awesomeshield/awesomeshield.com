@@ -6,12 +6,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<title>Awesome Shield</title>
+		<!-- Ubuntu Font -->
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:500,300' rel='stylesheet' type='text/css'>
 		<!-- Bootstrap -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
 		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/bower_components/fontawesome/css/font-awesome.min.css">
+		<!-- Video JS -->
+		<link rel="stylesheet" href="/bower_components/video.js/dist/video-js.css">
+		<!-- Big Video JS -->
+		<link rel="stylesheet" href="/bower_components/BigVideo.js/css/bigvideo.css">
 		<!-- Custom Styles -->
-		<link href="css/screen.css" rel="stylesheet" type="text/css" />
+		<link href="/css/screen.css" rel="stylesheet" type="text/css" />
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -20,14 +26,19 @@
 		<![endif]-->
 	</head>
 	<body>
-		<div id="wrapper-hero">
+		<div id="wrapper-hero" class="BigVideo">
 			<img class="logo" src="/img/awesome-shield.svg" alt="Awesome Shield">
 			<h1>Learning you can build on</h1>
+			<h2>We believe that anyone can be an inventor.</h2>
 		</div>
 		<div class="wrapper-form">
 			<form action="//github.us8.list-manage.com/subscribe/post?u=29cea31a43e9bda5325b47c05&amp;id=d1928c761b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				
+				<p><img class="ks-badge" src="/img/awesome-shield-ks.png" width="112" alt="awesome shield kickstarter coming soon">
+					Get (only the) important updates:
+				</p>
 				<input placeholder="Email Address" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				<input type="submit" value="Sign Up!" name="subscribe" id="mc-embedded-subscribe" class="button">
 				<div id="mce-responses">
 					<div class="response" id="mce-error-response" style="display:none"></div>
 					<div class="response" id="mce-success-response" style="display:none"></div>
@@ -38,25 +49,25 @@
 		</div>
 		<div class="wrapper-intro">
 			<h2>
-				In order to have agency in their future<br>
-				<span>young people need to</span><br>
-				<span>understand technology</span><br>
-				That’s why we started Awesome Shield
+				AWESOME SHIELD IS THE BEST WAY TO<br>
+				LEARN CODING THAT CONNECTS TO THE PHYSICAL WORLD
 			</h2>
 			<div class="contaner product">
 				<div class="row">
-					<div class="col-xs-5 col-sm-offset-1 col-sm-4">
-						<img class="img-responsive videos" src="/img/videos.jpg" alt="Awesome Shield Hardware">
-						<h2>Learning Materials</h2>
-						<h3>Videos, reference materials, and easy to read code<br> teach you how to program from the ground up.</h3>
+					<div class="col-sm-4">
+						<h3>1. Learning</h3>
+						<div class="product-example" style="background-image: url(/img/awesome-shield-learn.png);"></div>
+						<p>Learn at your own pace by watching videos. <br>Absolute beginners welcome.</p>
 					</div>
-					<div class="col-xs-2">
-						<h2 class="plus"><span>+</span></h2>
+					<div class="col-sm-4">
+						<h3>2. Coding</h3>
+						<div class="product-example" style="background-image: url(/img/awesome-shield-code.png);"></div>
+						<p>Simple code makes it easy to get started. <br>Pro strategies stay with you forever.</p>
 					</div>
-					<div class="col-xs-5 col-sm-4">
-						<img class="img-responsive hardware" src="/img/awesome-shield-board-v0.5.0-1.jpg" alt="Awesome Shield Hardware">
-						<h2>Hardware</h2>
-						<h3>Sensors, lights, buttons, and buzzers galore<br> give your code real-world application.</h3>
+					<div class="col-sm-4">
+						<h3>3. Making</h3>
+						<div class="product-example" style="background-image: url(/img/awesome-shield-board-v0.5.0-1.jpg);"></div>
+						<p>Make your code come alive with hardware. <br>Become the next great inventor!</p>
 					</div>
 				</div>
 			</div>
@@ -67,7 +78,16 @@
 					<div class="col-xs-12">
 						<h2>Let's Hang Out!</h2>
 
-						<h3>Join us at our <a class="cta" href="http://www.meetup.com/Awesome-Shield/">next meetup event</a> and learn to code with the Awesome Shield Founders. Or, reach out on your network of choice and say hi – we'd really love to meet you and hear your thoughts!</h3>
+						<p class="footer-nav">
+							<a class="cta" href="http://www.meetup.com/Awesome-Shield/">Meetups</a> 
+							<a class="cta" href="http://blog.awesomeshield.com">Blog</a>
+							<a class="cta" href="http://blog.awesomeshield.com">Press</a>
+							<a class="cta" href="http://blog.awesomeshield.com">FAQs</a>
+						</p>
+
+						<!-- <p>We'd love to meet you and hear your thoughts.</p> -->
+
+						<p>Reach out on your network of choice and say hi:</p>
 
 						<a href="https://www.facebook.com/awesomeshield"><i class="fa fa-facebook-official"></i></a>
 						<a href="https://twitter.com/awesome_shield"><i class="fa fa-twitter"></i></a>
@@ -85,10 +105,15 @@
 			</div>
 		</div>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.0.js"></script>
+
+		<!--<script type="text/javascript" charset="utf-8" src="/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="/bower_components/video.js/dist/video.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="/bower_components/BigVideo.js/lib/bigvideo.js"></script>-->
+
 		<script type="text/javascript" charset="utf-8" src="js/index.js"></script>
 
 		<!-- Google Analytics -->

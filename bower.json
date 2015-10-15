@@ -1,0 +1,20 @@
+{
+  "name": "awesomeshield.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/awesomeshield/awesomeshield.com",
+  "authors": [
+    "Jon Amar <jon@solomongiles.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-sticky": "~1.0.3"
+  }
+}
