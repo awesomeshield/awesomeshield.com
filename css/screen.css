@@ -95,7 +95,14 @@ HERO
     padding-top: calc(55vh - 120px);
 }
 
-
+.is-sticky {
+	height: 86px;
+    z-index: 5000;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+}
 /*
 FORM
 */

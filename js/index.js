@@ -9,6 +9,11 @@ $('document').ready(function() {
 	// 49SKbS7Xwf4 beautiful barn sepia
 });
 
+// sticky
+// $(document).ready(function(){
+// $("#sticker").sticky({topSpacing:0});
+// });
+
 
 // $(function() {
 //     var BV = new $.BigVideo({useFlashForFirefox:false});

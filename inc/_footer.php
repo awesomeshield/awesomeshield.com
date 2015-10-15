@@ -7,8 +7,8 @@
 						<p class="footer-nav">
 							<a class="cta" href="http://www.meetup.com/Awesome-Shield/">Meetups</a> 
 							<a class="cta" href="http://blog.awesomeshield.com">Blog</a>
-							<a class="cta" href="#">Press</a>
-							<a class="cta" href="/faq.php">FAQs</a>
+							<a class="cta" href="https://drive.google.com/drive/u/0/folders/0B0t7B87C0tOzVmlzTy1JM0tmU00">Press</a>
+							<a class="cta" href="/faq.html">FAQs</a>
 						</p>
 
 						<p>Reach out on your network of choice and say hi:</p>
@@ -34,6 +34,9 @@
 		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.0.js"></script>
 		<script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+		<script src="bower_components/jquery-sticky/jquery.sticky.js"></script>
+<script>
+</script>
 
 		<!--<script type="text/javascript" charset="utf-8" src="/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="/bower_components/video.js/dist/video.min.js"></script>
