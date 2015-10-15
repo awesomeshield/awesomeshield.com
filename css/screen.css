@@ -223,6 +223,34 @@ FOOTER
 }
 
 /*
+FAQs
+*/
+.faq h1 {
+	color: #FF0000;
+	margin: 40px 0;
+}
+.faq h3 {
+	font-size: 21px;
+}
+.faq p {
+	margin-bottom: 40px;
+}
+.contact-cta-wrapper {
+	padding: 60px 0;
+	margin: 40px 0 0;
+	background: #F7F7F7;
+}
+.contact-cta-wrapper h2 {
+	margin-bottom: 20px;
+	font-size: 48px;
+}
+.contact-cta-wrapper p {
+	text-align: center;
+}
+
+
+/*
+
 RESPONSIVE
 */
 @media (max-width: 1300px) {
