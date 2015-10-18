@@ -285,21 +285,29 @@ RESPONSIVE
 }
 @media (max-width: 550px) {
 	.wrapper-form {
-		margin-top: -130px;
+		margin-top: -119px;
 	}
 	#wrapper-hero h1 {
-	    padding: calc(60vh - 180px) 10px 0;
-	    font-size: 68px;
+	    padding: calc(60vh - 170px) 10px 0;
+	    font-size: 38px;
+	}
+	#wrapper-hero h2 {
+		font-size: 17px;
+		padding: 0 30px;
 	}
 	.logo {
 		width: 110px;
+	}
+	form .ks-badge {
+		left: 0;
+		top: -115px;
 	}
 	h2 {
 		font-size: 40px;
 		padding: 0 10px;
 	}
 	h2 span {
-		font-size: 50px;
+		font-size: 32px;
 	}
 	h3 {
 		font-size: 21px;
@@ -323,9 +331,13 @@ RESPONSIVE
 	.col-sm-4 .product-example {
 		margin: 0 0 10px; 
 	}
-	form .ks-badge {
-		left: 0;
-		top: -130px;
+	.footer-nav .cta {
+		margin: 0 5px;
 	}
-
+	.wrapper-footer a {
+		margin: 0 7px;
+	}
+	.wrapper-intro {
+		padding: 60px 0 0;
+	}
 }
