@@ -40,7 +40,7 @@ h1 {
 h2 {
 	font-size: 78px;
 	line-height: 0.9em;
-	color: #FF0000;
+	color: #cf2427;
 }
 #wrapper-hero h2 {
 	font-weight: 500;
@@ -60,7 +60,7 @@ p {
 a,
 a:hover,
 a:focus {
-	color: #FF0000;
+	color: #cf2427;
 }
 /*
 CORE CONTAINERS
@@ -80,7 +80,7 @@ HERO
 #wrapper-hero {
 	background: rgba(0,0,0,0.08);
 	height: 100vh;
-	border-top: 10px solid #FF0000;
+	border-top: 10px solid #cf2427;
 }
 #wrapper-hero h1,
 #wrapper-hero h2 {
@@ -111,7 +111,7 @@ HERO
 FORM
 */
 .wrapper-form {
-	background: #FF0000;
+	background: #cf2427;
 	margin-top: -85px;
 	z-index: 2000;
 }
@@ -185,7 +185,7 @@ INTRO
 	margin: 40px 0;
 }	
 .product h3 {
-	color: #FF0000;
+	color: #cf2427;
 	text-align: center;
 }
 .product p {
@@ -197,7 +197,7 @@ FOOTER
 */
 .wrapper-footer {
 	padding: 60px 0;
-	background: #FF0000;
+	background: #cf2427;
 	text-align: center;
 }
 .wrapper-footer h2,
@@ -237,7 +237,7 @@ FOOTER
 FAQs
 */
 .faq h1 {
-	color: #FF0000;
+	color: #cf2427;
 	margin: 40px 0;
 }
 .faq h3 {
