@@ -54,7 +54,9 @@ h3 {
 .dash {
 	font-family: Arial, sans-serif;
 }
-p {
+p,
+ul,
+ol {
 	font-size: 18px;
 }
 a,
@@ -234,17 +236,54 @@ FOOTER
 }
 
 /*
-FAQs
+SUB PAGES
 */
-.faq h1 {
+.sub-page h1 {
 	color: #cf2427;
 	margin: 40px 0;
 }
-.faq h3 {
-	font-size: 21px;
+.sub-page h3 {
+	font-size: 24px;
 }
-.faq p {
+.sub-page p,
+.sub-page ul,
+.sub-page ol,
+.sub-page hr,
+.sub-page h3 {
 	margin-bottom: 40px;
+}
+.sub-page li {
+	margin-bottom: 10px;
+}
+.sub-page .elevator {
+	color: black;
+    margin-bottom: 70px;
+    text-transform: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 38px;
+    font-weight: 100;
+    line-height: 42px;
+    text-align: center;
+}
+
+.sub-page .images p {
+	font-size: 14px;
+	margin: 10px 0 40px;
+}
+
+/*
+PRESS
+*/
+.press h3 {
+	color: #cf2427;
+}
+
+
+/*
+FAQs
+*/
+.faq h3 {
+	margin-bottom: 10px;
 }
 .contact-cta-wrapper {
 	padding: 60px 0;
