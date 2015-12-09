@@ -10,9 +10,36 @@ $('document').ready(function() {
 });
 
 // sticky
-// $(document).ready(function(){
-// $("#sticker").sticky({topSpacing:0});
-// });
+$(document).ready(function(){
+	var isSticky = false;
+	var $elem = $("#sticker");
+	var elemHeight = 0;
+	var windowHeight = 0;
+	var breakpoint = 0;
+	calculateBreakpoint();
+
+	// Calculates when elem should stick
+	function calculateBreakpoint() {
+		elemHeight = $elem.height();
+		windowHeight = $(window).height();
+		breakpoint = windowHeight - elemHeight;
+	}
+
+	// Determines if elem should stick
+	function determineStickyness() {
+		var top = $(window).scrollTop();
+		if (top >= breakpoint && !isSticky) {
+			isSticky = true;
+			$elem.addClass('sticky');
+		} else if (top < breakpoint && isSticky) {
+			isSticky = false;
+			$elem.removeClass('sticky');
+		}
+	}
+
+	$(window).scroll(_.throttle(determineStickyness,200));
+	$(window).resize(_.throttle(calculateBreakpoint,500));
+});
 
 
 // $(function() {

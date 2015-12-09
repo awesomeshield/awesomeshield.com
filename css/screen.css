@@ -117,6 +117,17 @@ FORM
 	margin-top: -85px;
 	z-index: 2000;
 }
+.wrapper-form.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin-top: 0;
+}
+.wrapper-form.sticky .ks-badge {
+	display: none;
+}
+
 form {
 	text-align: center;
 	padding: 20px;
