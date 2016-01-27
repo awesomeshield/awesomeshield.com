@@ -40,7 +40,7 @@ h1 {
 h2 {
 	font-size: 78px;
 	line-height: 0.9em;
-	color: #cf2427;
+	color: #f72727;
 }
 #wrapper-hero h2 {
 	font-weight: 500;
@@ -62,7 +62,7 @@ ol {
 a,
 a:hover,
 a:focus {
-	color: #cf2427;
+	color: #f72727;
 }
 /*
 CORE CONTAINERS
@@ -82,7 +82,7 @@ HERO
 #wrapper-hero {
 	background: rgba(0,0,0,0.08);
 	height: 100vh;
-	border-top: 10px solid #cf2427;
+	border-top: 10px solid #f72727;
 }
 #wrapper-hero h1,
 #wrapper-hero h2 {
@@ -113,7 +113,7 @@ HERO
 FORM
 */
 .wrapper-form {
-	background: #cf2427;
+	background: #f72727;
 	margin-top: -85px;
 	z-index: 2000;
 }
@@ -198,7 +198,7 @@ INTRO
 	margin: 40px 0;
 }	
 .product h3 {
-	color: #cf2427;
+	color: #f72727;
 	text-align: center;
 }
 .product p {
@@ -210,7 +210,7 @@ FOOTER
 */
 .wrapper-footer {
 	padding: 60px 0;
-	background: #cf2427;
+	background: #f72727;
 	text-align: center;
 }
 .wrapper-footer h2,
@@ -250,7 +250,7 @@ FOOTER
 SUB PAGES
 */
 .sub-page h1 {
-	color: #cf2427;
+	color: #f72727;
 	margin: 40px 0;
 }
 .sub-page h3 {
@@ -286,7 +286,15 @@ SUB PAGES
 PRESS
 */
 .press h3 {
-	color: #cf2427;
+	color: #f72727;
+}
+
+/*
+STYLEGUIDE
+*/
+.styleguide h1,
+.styleguide h2 {
+	text-align: left;
 }
 
 
