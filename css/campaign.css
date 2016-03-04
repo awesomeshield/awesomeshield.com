@@ -1,0 +1,387 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'summer_fontbold';
+    src: url('/fonts/summer_font_bold-webfont.eot');
+    src: url('/fonts/summer_font_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/summer_font_bold-webfont.woff2') format('woff2'),
+         url('/fonts/summer_font_bold-webfont.woff') format('woff'),
+         url('/fonts/summer_font_bold-webfont.ttf') format('truetype'),
+         url('/fonts/summer_font_bold-webfont.svg#summer_fontbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* 
+TYPE
+*/
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+}
+h1,
+h2 {
+    font-family: 'summer_fontbold';
+	text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+h3 {
+	font-family: 'Ubuntu', sans-serif;
+}
+h1 {
+    font-size: 98px;
+}
+h2 {
+	font-size: 78px;
+	line-height: 0.9em;
+	color: #f72727;
+}
+#wrapper-hero h2 {
+	font-weight: 500;
+	font-size: 28px;
+	text-align: center;
+}
+h3 {
+	font-size: 36px;
+	text-transform: none;
+}
+.dash {
+	font-family: Arial, sans-serif;
+}
+p,
+ul,
+ol {
+	font-size: 18px;
+}
+a,
+a:hover,
+a:focus {
+	color: #f72727;
+}
+/*
+CORE CONTAINERS
+*/
+[class^="wrapper"] {
+	position: relative;
+	z-index: 1000;	
+}
+.row {
+	margin: 0; /* fix for bootstrap negative margins on .row */
+}
+
+
+/*
+HERO
+*/
+#wrapper-hero {
+	background: rgba(0,0,0,0.08);
+	height: 100vh;
+	border-top: 10px solid #f72727;
+}
+#wrapper-hero h1,
+#wrapper-hero h2 {
+	color: white;
+}
+#wrapper-hero h2 {
+	font-family: 'Ubuntu', sans-serif;
+}
+.logo {
+	width: 180px;
+	margin: 0 auto;
+	padding-top: 6vh;
+	display: block;
+}
+#wrapper-hero h1 {
+    padding-top: calc(55vh - 120px);
+}
+
+.is-sticky {
+	height: 86px;
+    z-index: 5000;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+}
+/*
+FORM
+*/
+.wrapper-form {
+	background: #f72727;
+	margin-top: -85px;
+	z-index: 2000;
+}
+.wrapper-form.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin-top: 0;
+}
+.wrapper-form.sticky .ks-badge {
+	display: none;
+}
+
+form {
+	text-align: center;
+	padding: 20px;
+}
+form p {
+	position: relative;
+	display: inline-block;
+	top: 4px;
+	margin-right: 10px;
+	font-size: 18px;
+	color: white;
+
+}
+form .ks-badge {
+	position: absolute;
+    top: -55px;
+    left: -130px;
+    transform: rotate(-20deg);
+}
+input {
+	display: inline-block;
+}
+.email {
+	background: rgba(255,255,255,0.2);
+    border: none;
+    border-bottom: 3px solid white;
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+}
+.button {
+	border: 3px solid white;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px 9px;
+}
+::-webkit-input-placeholder {
+   color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+:-ms-input-placeholder {  
+   color: white;  
+}
+
+
+/*
+INTRO
+*/
+.wrapper-intro {
+	background: white;
+	padding: 80px 0 80px;
+}
+
+/*
+SECTIONS
+*/
+
+section {
+	margin: 0 auto;
+	margin-bottom: 50px;
+
+	max-width: 820px;
+}
+
+section h1 {
+	color: #f72727;
+	font-size: 64px;
+}
+
+section p.subline {
+	text-align: center;
+	color: #33333;
+	font-size: 24px;
+}
+
+section p.media {
+	text-align: center;
+}
+
+section p.media img {
+	max-width: 80%;
+}
+
+section p.intro {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+section .learn-table {
+	margin-top: 20px;
+}
+
+section .learn-table > div {
+	min-height: 500px;
+}
+
+section .learn-table h2 {
+	color: white;	
+	padding: 10px;
+	text-transform: none;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;	
+	font-size: 20px;
+	min-height: 100px;
+}
+
+section .learn-table .code {
+	background: #11be93;
+	color: white;
+}
+
+section .learn-table .steam {
+	background: #e3b00b;
+	color: white;
+}
+
+section .learn-table .think {
+	background: #977eb7;
+	color: white;
+}
+
+
+
+/*
+FOOTER
+*/
+.wrapper-footer {
+	padding: 60px 0;
+	background: #f72727;
+	text-align: center;
+}
+.wrapper-footer h2,
+.wrapper-footer p {
+	color: white;
+	margin-bottom: 10px;
+}
+.wrapper-footer .cta {
+	text-decoration: underline;
+	font-weight: bold;
+	margin: 0;
+}
+.wrapper-footer a:hover {
+	color: black;
+}
+.wrapper-footer a {
+	color: white;
+	margin: 0 10px;
+}
+.wrapper-footer a .fa {
+	font-size: 38px;
+}
+.legal,
+.impressum a {
+	font-size: 12px;
+}
+.legal {
+	color: white;
+	opacity: 0.5;
+}
+.footer-nav .cta {
+	margin: 0 10px;
+	display: inline-block;
+}
+
+
+/*
+
+RESPONSIVE
+*/
+@media (max-width: 1300px) {
+	.product br {
+		display: none;
+	}
+}
+@media (max-width: 790px) {
+	#tubular-container iframe#tubular-player {
+		display: none;
+	}
+	#tubular-container {
+		background: black url(/img/kid-learning-to-code-2.jpg) top right no-repeat;
+		background-size: cover;
+	}
+}
+@media (max-width: 750px) {
+
+	h2 {
+		font-size: 40px;
+	}
+	h2 span {
+		font-size: 80px;
+	}
+}
+@media (max-width: 550px) {
+	.wrapper-form {
+		margin-top: -119px;
+	}
+	#wrapper-hero h1 {
+	    padding: calc(60vh - 170px) 10px 0;
+	    font-size: 38px;
+	}
+	#wrapper-hero h2 {
+		font-size: 17px;
+		padding: 0 30px;
+	}
+	.logo {
+		width: 110px;
+	}
+	form .ks-badge {
+		left: 0;
+		top: -115px;
+	}
+	h2 {
+		font-size: 40px;
+		padding: 0 10px;
+	}
+	h2 span {
+		font-size: 32px;
+	}
+	h3 {
+		font-size: 21px;
+	}
+	.email {
+		text-align: center;
+	}
+	.hardware {
+	    margin: 62px auto;
+	}
+	.plus {
+		margin-right: -15px;
+	}
+	input.button {
+		margin-top: 10px;
+		width: 226px;
+	}
+	.col-sm-4 {
+		margin-bottom: 50px;
+	}
+	.col-sm-4 .product-example {
+		margin: 0 0 10px; 
+	}
+	.footer-nav .cta {
+		margin: 0 5px;
+	}
+	.wrapper-footer a {
+		margin: 0 7px;
+	}
+	.wrapper-intro {
+		padding: 60px 0 0;
+	}
+}
