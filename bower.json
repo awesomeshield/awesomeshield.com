@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "jquery-sticky": "~1.0.3",
-    "sticky-kit": "^1.1.2"
+    "sticky-kit": "^1.1.2",
+    "jquery.countdown": "^2.1.0"
   }
 }

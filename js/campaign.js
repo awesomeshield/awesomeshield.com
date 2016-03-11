@@ -16,7 +16,12 @@ $(document).ready(function() {
 		'parent': $('#sidebar').closest('.row'),
 		'offset_top': 20,
 		'bottoming': false,
-	});
+	});	
+});
 
-	
+// countdown
+$(document).ready(function() {
+	$('#countdown').countdown('2016/04/26', function(event) {
+   		$(this).html(event.strftime('in %D days'));
+  	});
 });
