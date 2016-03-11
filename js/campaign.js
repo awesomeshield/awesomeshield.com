@@ -10,33 +10,13 @@ $('document').ready(function() {
 });
 
 // sticky
-$(document).ready(function(){
-	var isSticky = false;
-	var $elem = $("#sticker");
-	var elemHeight = 0;
-	var windowHeight = 0;
-	var breakpoint = 0;
-	calculateBreakpoint();
+$(document).ready(function() {
 
-	// Calculates when elem should stick
-	function calculateBreakpoint() {
-		elemHeight = $elem.height();
-		windowHeight = $(window).height();
-		breakpoint = windowHeight - elemHeight;
-	}
+	$('#sidebar').stick_in_parent({
+		'parent': $('#sidebar').closest('.row'),
+		'offset_top': 20,
+		'bottoming': false,
+	});
 
-	// Determines if elem should stick
-	function determineStickyness() {
-		var top = $(window).scrollTop();
-		if (top >= breakpoint && !isSticky) {
-			isSticky = true;
-			$elem.addClass('sticky');
-		} else if (top < breakpoint && isSticky) {
-			isSticky = false;
-			$elem.removeClass('sticky');
-		}
-	}
-
-	$(window).scroll(_.throttle(determineStickyness,200));
-	$(window).resize(_.throttle(calculateBreakpoint,500));
+	
 });

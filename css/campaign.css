@@ -57,7 +57,7 @@ h3 {
 p,
 ul,
 ol {
-	font-size: 18px;
+	font-size: 16px;
 }
 a,
 a:hover,
@@ -75,13 +75,42 @@ CORE CONTAINERS
 	margin: 0; /* fix for bootstrap negative margins on .row */
 }
 
+/*
+FORMS 
+*/
+
+
+input {
+	width: 100%;
+}
+
+form .row {
+
+}
+
+.email {
+	background: rgba(255,255,255,0.2);
+    border: none;
+    border-bottom: 3px solid white;
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+}
+.button {
+	border: 3px solid white;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px 9px;
+}
+
 
 /*
 HERO
 */
 #wrapper-hero {
-	background: rgba(0,0,0,0.08);
-	height: 100vh;
+	background: rgba(0,0,0,0.40);
+	height: 55vh;
 	border-top: 10px solid #f72727;
 }
 #wrapper-hero h1,
@@ -92,7 +121,7 @@ HERO
 	font-family: 'Ubuntu', sans-serif;
 }
 .logo {
-	width: 180px;
+	width: 250px;
 	margin: 0 auto;
 	padding-top: 6vh;
 	display: block;
@@ -109,62 +138,7 @@ HERO
     left: 0;
     right: 0;
 }
-/*
-FORM
-*/
-.wrapper-form {
-	background: #f72727;
-	margin-top: -85px;
-	z-index: 2000;
-}
-.wrapper-form.sticky {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	margin-top: 0;
-}
-.wrapper-form.sticky .ks-badge {
-	display: none;
-}
 
-form {
-	text-align: center;
-	padding: 20px;
-}
-form p {
-	position: relative;
-	display: inline-block;
-	top: 4px;
-	margin-right: 10px;
-	font-size: 18px;
-	color: white;
-
-}
-form .ks-badge {
-	position: absolute;
-    top: -55px;
-    left: -130px;
-    transform: rotate(-20deg);
-}
-input {
-	display: inline-block;
-}
-.email {
-	background: rgba(255,255,255,0.2);
-    border: none;
-    border-bottom: 3px solid white;
-    padding: 10px 30px;
-    color: white;
-    font-weight: bold;
-}
-.button {
-	border: 3px solid white;
-    background: transparent;
-    color: white;
-    font-weight: bold;
-    padding: 10px 30px 9px;
-}
 ::-webkit-input-placeholder {
    color: white;
 }
@@ -178,13 +152,59 @@ input {
    color: white;  
 }
 
+/*
+COMING SOON 
+*/
+
+.coming-soon {
+	color: white;
+	text-align: center;
+	margin: 30px auto;
+}
 
 /*
 INTRO
 */
 .wrapper-intro {
 	background: white;
-	padding: 80px 0 80px;
+	padding: 40px 0 80px;
+}
+
+/*
+SIGNUP
+*/
+
+.signup-box {
+	background: #f72727;
+	color: white;	
+	padding: 20px;
+
+}
+
+.signup-box h1 {
+	font-size: 38px;
+	margin-bottom: 10px;
+}
+
+.signup-box input {
+	margin: 5px 0;
+}
+
+/*
+SPREAD THE WORD
+*/
+
+.spread-the-word {
+	color: #888;	
+	margin: 10px 0;
+	text-align: center;
+}
+
+.spread-the-word--social a {
+	padding: 0 5px;
+	font-size: 32px;
+	color: #888;
+	text-align: center;
 }
 
 /*
