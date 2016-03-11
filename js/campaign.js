@@ -12,11 +12,27 @@ $('document').ready(function() {
 // sticky
 $(document).ready(function() {
 
+
+
+	var mq = window.matchMedia("(min-width: 992px)");
+	mq.addListener(WidthChange);
+	WidthChange(mq);
+
+	// media query change
+	function WidthChange(mq) {
+
+	  if (mq.matches) {
 	$('#sidebar').stick_in_parent({
 		'parent': $('#sidebar').closest('.row'),
 		'offset_top': 20,
 		'bottoming': false,
 	});	
+	  } else {
+		$("#sidebar").trigger("sticky_kit:detach");
+	  }
+
+	}
+
 });
 
 // countdown

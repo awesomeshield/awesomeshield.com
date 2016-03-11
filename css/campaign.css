@@ -111,6 +111,7 @@ HERO
 #wrapper-hero {
 	background: rgba(0,0,0,0.40);
 	height: 55vh;
+	max-height: 500px;
 	border-top: 10px solid #f72727;
 }
 #wrapper-hero h1,
@@ -123,7 +124,7 @@ HERO
 .logo {
 	width: 250px;
 	margin: 0 auto;
-	padding-top: 7vh;
+	padding-top: 30px;
 	display: block;
 }
 #wrapper-hero h1 {
@@ -167,7 +168,7 @@ INTRO
 */
 .wrapper-intro {
 	background: white;
-	padding: 40px 0 80px;
+	padding: 30px 0 30px;
 }
 
 /*
@@ -247,8 +248,9 @@ section h1 {
 }
 
 section p.subline {
+	padding: 10px 0;
 	text-align: center;
-	color: #33333;
+	color: #333333;
 	font-size: 24px;
 }
 
@@ -272,6 +274,7 @@ section .learn-table {
 
 section .learn-table > div {
 	min-height: 500px;
+	padding-bottom: 15px;
 }
 
 section .learn-table h2 {
@@ -281,7 +284,13 @@ section .learn-table h2 {
 	font-family: 'Ubuntu', sans-serif;
 	text-align: center;	
 	font-size: 20px;
+	line-height: 25px;
 	min-height: 100px;
+}
+
+section .learn-table h2 small {
+	color: white;
+	line-height: 16px;	
 }
 
 section .learn-table .code {
@@ -347,22 +356,31 @@ FOOTER
 
 RESPONSIVE
 */
-@media (max-width: 1300px) {
-	.product br {
-		display: none;
+
+@media (max-width: 1200px) {
+
+	section .learn-table > div {
+		min-height: 0;
 	}
+
+	section .learn-table h2 {
+		min-height: 0;
+		padding-bottom: 15px;
+	}
+
 }
+
 @media (max-width: 790px) {
 	#tubular-container iframe#tubular-player {
 		display: none;
 	}
-	#tubular-container {
+	#wrapper-hero {
 		background: black url(/img/kid-learning-to-code-2.jpg) top right no-repeat;
 		background-size: cover;
 	}
 }
-@media (max-width: 750px) {
 
+@media (max-width: 750px) {
 	h2 {
 		font-size: 40px;
 	}
@@ -370,27 +388,39 @@ RESPONSIVE
 		font-size: 80px;
 	}
 }
+
 @media (max-width: 550px) {
-	.wrapper-form {
-		margin-top: -119px;
-	}
+
 	#wrapper-hero h1 {
 	    padding: calc(60vh - 170px) 10px 0;
 	    font-size: 38px;
 	}
+
 	#wrapper-hero h2 {
 		font-size: 17px;
 		padding: 0 30px;
 	}
+
 	.logo {
 		width: 110px;
 	}
-	form .ks-badge {
-		left: 0;
-		top: -115px;
-	}
-	h2 {
+
+
+	section h1 {
 		font-size: 40px;
+	}
+
+	section p.subline {
+		font-size: 20px;
+	}
+
+	section p.intro {
+		font-size: 16px;
+	}
+
+
+	h2 {
+		font-size: 30px;
 		padding: 0 10px;
 	}
 	h2 span {
@@ -402,29 +432,17 @@ RESPONSIVE
 	.email {
 		text-align: center;
 	}
-	.hardware {
-	    margin: 62px auto;
-	}
-	.plus {
-		margin-right: -15px;
-	}
+
 	input.button {
 		margin-top: 10px;
 		width: 226px;
 	}
-	.col-sm-4 {
-		margin-bottom: 50px;
-	}
-	.col-sm-4 .product-example {
-		margin: 0 0 10px; 
-	}
+
 	.footer-nav .cta {
 		margin: 0 5px;
 	}
 	.wrapper-footer a {
 		margin: 0 7px;
 	}
-	.wrapper-intro {
-		padding: 60px 0 0;
-	}
+
 }
