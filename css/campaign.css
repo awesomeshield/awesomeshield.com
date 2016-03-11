@@ -211,6 +211,7 @@ SIGNUP
 }
 
 .signup-box input {
+	display: block;
 	margin: 5px auto;
 }
 
