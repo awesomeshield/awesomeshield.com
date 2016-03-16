@@ -268,7 +268,7 @@ SUB PAGES
 }
 .sub-page .elevator {
 	color: black;
-    margin-bottom: 70px;
+    margin-bottom: 5px;
     text-transform: none;
     font-family: 'Ubuntu', sans-serif;
     font-size: 38px;
@@ -276,10 +276,21 @@ SUB PAGES
     line-height: 42px;
     text-align: center;
 }
+.sub-page .lead {
+	line-height: 36px;
+	text-align: center;
+}
+.sub-page .images.row {
+	margin-bottom: 40px;
+} 
+.sub-page .videos p {
+	margin-bottom: 40px;
+	font-size: 14px;
+} 
 
 .sub-page .images p {
 	font-size: 14px;
-	margin: 10px 0 40px;
+	margin: 10px 0 0;
 }
 
 /*
