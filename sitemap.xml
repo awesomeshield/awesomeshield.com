@@ -12,17 +12,18 @@
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://awesomeshield.com/press.html</loc>
+  <loc>http://awesomeshield.com/press</loc>
   <lastmod>2016-03-23T12:40:37+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://awesomeshield.com/faq.html</loc>
+  <loc>http://awesomeshield.com/faq</loc>
   <lastmod>2016-03-23T12:40:37+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://awesomeshield.com/impressum.html</loc>
+  <loc>http://awesomeshield.com/impressum</loc>
   <lastmod>2016-03-23T12:40:37+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
+</urlset>
