@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'summer_fontbold';
+    src: url('/fonts/summer_font_bold-webfont.eot');
+    src: url('/fonts/summer_font_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/summer_font_bold-webfont.woff2') format('woff2'),
+         url('/fonts/summer_font_bold-webfont.woff') format('woff'),
+         url('/fonts/summer_font_bold-webfont.ttf') format('truetype'),
+         url('/fonts/summer_font_bold-webfont.svg#summer_fontbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* 
+TYPE
+*/
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+h1,
+h2 {
+    font-family: 'summer_fontbold';
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    background: #f72727;
+    color: white;   
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 30px 0;
+    font-size: 98px;
+    color: #f72727;
+}
+
+h2 {
+    margin: 30px 0;
+    font-size: 42px;
+    color: #333;
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+
+}
+
+h3 a , h3 {
+    color: #888;
+}
+
+h3 a:hover {
+    color: #f72727;
+}
+
+
+.logo {
+    height: 100px;
+}
+
+.video {
+    text-align: center;
+    margin: 20px auto;
+}
+
+
+
+.action {
+    text-align: center;
+}
+
+a.social {
+    text-align: center;
+    margin-left: 20px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    line-height: 60px;
+    list-style: none;
+    color: white;    
+}
+
+
+a.twitter {
+    background: #55acee;
+}
+
+a.facebook {
+    background: #3b5998;
+}
+
+a.youtube {
+    background: #c4302b;
+}
+
+
+a.twitter:hover {
+    background: #6fc6ff;
+}
+
+a.facebook:hover {
+    background: #5573b2;
+}
